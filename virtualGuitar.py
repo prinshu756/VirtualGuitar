@@ -1,7 +1,10 @@
-
 import cv2
 import mediapipe as mp
-import pygame as pg 
+import pygame as pg
+
+# Access solutions from mediapipe namespace
+mp_drawing = mp.solutions.drawing_utils
+mp_hands = mp.solutions.hands 
 
 pg.init()
 pg.mixer.init()
@@ -20,9 +23,6 @@ rring_sound = pg.mixer.Sound("FM7.wav")
 rpinky_sound = pg.mixer.Sound("G.wav")
 
 last_chord = None
-
-mp_drawing = mp.solutions.drawing_utils
-mp_hands = mp.solutions.hands
 
 # Camera settings
 cap = cv2.VideoCapture(0)
@@ -141,31 +141,6 @@ with mp_hands.Hands(
 
 cap.release()
 cv2.destroyAllWindows()
-
-import cv2
-import mediapipe as mp
-import pygame as pg 
-
-pg.init()
-pg.mixer.init()
-
-# Load sounds
-
-lthumb_sound = pg.mixer.Sound("Am.wav") 
-lindex_sound = pg.mixer.Sound("AM7.wav")
-lmiddle_sound = pg.mixer.Sound("Bm.wav")
-lring_sound = pg.mixer.Sound("CM7.wav")
-lpinky_sound = pg.mixer.Sound("Dm.wav")
-rthumb_sound = pg.mixer.Sound("DM7.wav")
-rindex_sound = pg.mixer.Sound("Em.wav")
-rmiddle_sound = pg.mixer.Sound("EM7.wav")
-rring_sound = pg.mixer.Sound("FM7.wav")
-rpinky_sound = pg.mixer.Sound("G.wav")
-
-last_chord = None
-
-mp_drawing = mp.solutions.drawing_utils
-mp_hands = mp.solutions.hands
 
 # Camera settings
 cap = cv2.VideoCapture(0)
