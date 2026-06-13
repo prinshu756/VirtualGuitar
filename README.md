@@ -4,14 +4,6 @@ A machine learning-based project that enables users to play guitar chords using 
 
 ---
 
-## Demo
-
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWYzYzJ4bG56eGgxY2o4cGZ4eXp6eG56eGg4eXp6eGg4eXp6eGg4eQ/giphy.gif" alt="Virtual Guitar Demo" width="600"/>
-</p>
-
----
-
 ## Features
 
 | Feature | Description |
